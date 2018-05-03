@@ -48,7 +48,7 @@
             color: var(--paletteColor2);
 
             &:before {
-                background-image: url('../../theme/assets/images/heart.png');
+                background-image: url('../../theme/assets/images/comment.png');
             }
         }
     }

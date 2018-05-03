@@ -1,7 +1,11 @@
 // Core
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Theme
 import './theme/init';
 
-ReactDOM.render('Привет!', document.getElementById('app'));
+// App
+import Instagram from './containers/Instagram';
+
+ReactDOM.render(<Instagram />, document.getElementById('app'));

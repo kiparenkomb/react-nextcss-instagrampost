@@ -8,3 +8,22 @@ import photos from './photos';
 
 // Components
 import Photo from 'components/Photo';
+
+export default class Photos extends Component {
+    render () {
+        const photosJSX = photos.map((photo) => (
+            <Photo
+                comments = { photo.comments }
+                key = { photo.id }
+                likes = { photo.likes }
+                src = { photosMap[photo.name] }
+            />
+        ));
+
+        return (
+            <div className = { Styles.photos }>
+                <div className = { Styles.layout }>{photosJSX}</div>
+            </div>
+        );
+    }
+}
